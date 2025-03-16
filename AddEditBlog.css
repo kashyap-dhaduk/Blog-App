@@ -1,0 +1,84 @@
+/* General form styling */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+form h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Label styling */
+form .form-label {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input and textarea styling */
+form .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect on inputs and textareas */
+form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button styling */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+form button[type="submit"]:hover {
+    background-color: rgb(48, 123, 221);
+}
+
+/* Error/validation feedback (optional, if needed) */
+form .error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form h1 {
+        font-size: 1.5em;
+    }
+
+    form .form-control {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}

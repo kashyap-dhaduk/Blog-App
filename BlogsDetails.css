@@ -1,0 +1,111 @@
+/* General Blog Details Page Styling */
+.blog-details-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Soft light background */
+}
+
+/* Card container for blog details */
+.Card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Slightly smaller card */
+    margin: 0 auto;
+    padding: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hover effect on card */
+.Card:hover {
+    transform: translateY(-4px); /* Slight lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+/* Styling the blog title */
+.Card h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+/* Styling the image inside the blog details card */
+.Card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Author and description text styling */
+.Card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Styling for the action links (Back to Home & Edit) */
+.Card a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3498db;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for action links */
+.Card a:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Delete button styling */
+.Card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on delete button */
+.Card button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Responsive design for smaller screen sizes */
+@media (max-width: 768px) {
+    .Card {
+        padding: 15px;
+    }
+
+    .Card h1 {
+        font-size: 1.8rem;
+    }
+
+    .Card a,
+    .Card button {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
